@@ -1,0 +1,14 @@
+{
+    "manifest_version":3,
+    "name":"Chat GPT Map",
+    "description":"Navigate easily on your ChatGPT chat",
+    "version":"0.1",
+    "permissions":[],
+    "content_scripts":[
+    {
+        "matches":["https://chatgpt.com/c/*"],
+        "js":["content.js"]
+    }
+    ]
+
+}
