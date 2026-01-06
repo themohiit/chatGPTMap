@@ -22,9 +22,9 @@ function createToggleBar(){
     btn.style.color="white";
     btn.style.border="none";
     btn.style.zIndex ="10000";
-    btn.style.padding = "8px 12px";
+    btn.style.padding = "8px 15px";
     btn.style.fontSize ="16px";
-    btn.style.borderRadius="8px";
+    btn.style.borderRadius="12px";
     btn.style.cursor="pointer";
     btn.addEventListener("mouseenter", () => btn.style.opacity = "1");
     btn.addEventListener("mouseleave", () => btn.style.opacity = "0.2");
@@ -55,7 +55,8 @@ function sidebar(){
     bar.innerHTML = `<h4 style="margin-bottom:10px;">Chat Map</h4>`
     bar.addEventListener("mouseenter", () => bar.style.opacity = "1");
     bar.addEventListener("mouseleave", () => bar.style.opacity = "0.2");
-
+    bar.style.scrollbarWidth = "none";    
+    bar.style.msOverflowStyle = "none"; 
     document.body.appendChild(bar);
 }
 
